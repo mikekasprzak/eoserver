@@ -50,6 +50,9 @@ $(BIN): $(SOURCES)
 
 clean:
 	rm -f $(BIN) $(DEPS)
+
+run:
+	$(BIN)
 	
 $(OUT):
 	mkdir -p $(OUT)
