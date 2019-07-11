@@ -26,7 +26,8 @@ COMMON_FLAGS				+=	-g -Wall \
 
 LD_FLAGS					+=	$(addprefix -L,$(LIB_DIRS)) \
 								$(EDSDK_DIR)/EDSDK_64/Library/EDSDK.lib \
-								$(NDI_SDK_DIR)/Lib/x64/Processing.NDI.Lib.x64.lib
+								$(NDI_SDK_DIR)/Lib/x64/Processing.NDI.Lib.x64.lib \
+								-static
 
 DEPS						:=	EDSDK.dll Processing.NDI.Lib.x64.dll
 
